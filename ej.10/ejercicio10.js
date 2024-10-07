@@ -9,6 +9,7 @@ Practicar la validación de entradas y la lógica de decisiones.
 
 function pedirNumero(){
     let numeroMes = prompt("Indica un número de mes: ");
+    numeroMes = parseInt(numeroMes);
     if (validarNumero(numeroMes)){
         let dias = obtenerDiasMes(numeroMes);
         mostrarResultado(numeroMes,dias);
